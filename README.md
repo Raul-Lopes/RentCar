@@ -71,16 +71,16 @@ This project demonstrates:
 
 - About
 
-![System Overview](src/assets/images/About.png)
+![System Overview](About.png)
 
 ---
 
 - List Of Customers
 
-![System Overview](src/assets/images/ListOfCustomers.png)
+![System Overview](ListOfCustomers.png)
 
 ---
 
 - List Of Brand
 
-![System Overview](src/assets/images/ListOfBrand.png)
+![System Overview](ListOfBrand.png)
