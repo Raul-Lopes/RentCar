@@ -1,31 +1,23 @@
 package com.raul.mvc.boot.web.controller;
 
-import java.time.LocalDate;
-import java.util.List;
-
-import javax.validation.Valid;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import com.raul.mvc.boot.beans.Car;
 import com.raul.mvc.boot.beans.Customer;
 import com.raul.mvc.boot.beans.UF;
 import com.raul.mvc.boot.service.CarService;
 import com.raul.mvc.boot.service.CustomerService;
 import com.raul.mvc.boot.web.validator.CustomerValidator;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import java.time.LocalDate;
+import java.util.List;
 
 @Controller
 @RequestMapping("/customers")

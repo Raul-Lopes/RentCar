@@ -1,99 +1,102 @@
 package com.raul.mvc.boot.beans;
 
-import javax.persistence.*;
-import javax.validation.constraints.*;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Digits;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @SuppressWarnings("serial")
 @Entity
 @Table(name = "ADDRESS")
 public class Address extends AbstractEntity<Long> {
 
-	@NotBlank
-	@Size(min = 3, max = 255)
-	@Column(nullable = false)
-	private String logradouro;
-	
-	@NotBlank
-	@Size(min = 3, max = 255)
-	@Column(nullable = false)
-	private String bairro;
-	
-	@NotBlank
-	@Size(min = 3, max = 255)
-	@Column(nullable = false)
-	private String cidade;
-	
-	@NotNull(message = "{NotNull.address.uf}")
-	@Column(nullable = false, length = 2)
-	@Enumerated(EnumType.STRING)
-	private UF uf;
-	
-	@NotBlank
-	@Size(min = 9, max = 9, message = "{Size.address.cep}")
-	@Column(nullable = false, length = 9)
-	private String cep;
-	
-	@NotNull(message = "{NotNull.address.numero}")
-	@Digits(integer = 5, fraction = 0)
-	@Column(nullable = false, length = 5)
-	private Integer numero;
-	
-	@Size(max = 255)
-	private String complemento;
+    @NotBlank
+    @Size(min = 3, max = 255)
+    @Column(nullable = false)
+    private String logradouro;
 
-	public String getLogradouro() {
-		return logradouro;
-	}
+    @NotBlank
+    @Size(min = 3, max = 255)
+    @Column(nullable = false)
+    private String bairro;
 
-	public void setLogradouro(String logradouro) {
-		this.logradouro = logradouro;
-	}
+    @NotBlank
+    @Size(min = 3, max = 255)
+    @Column(nullable = false)
+    private String cidade;
 
-	public String getBairro() {
-		return bairro;
-	}
+    @NotNull(message = "{NotNull.address.uf}")
+    @Column(nullable = false, length = 2)
+    @Enumerated(EnumType.STRING)
+    private UF uf;
 
-	public void setBairro(String bairro) {
-		this.bairro = bairro;
-	}
+    @NotBlank
+    @Size(min = 9, max = 9, message = "{Size.address.cep}")
+    @Column(nullable = false, length = 9)
+    private String cep;
 
-	public String getCidade() {
-		return cidade;
-	}
+    @NotNull(message = "{NotNull.address.numero}")
+    @Digits(integer = 5, fraction = 0)
+    @Column(nullable = false, length = 5)
+    private Integer numero;
 
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
-	}
+    @Size(max = 255)
+    private String complemento;
 
-	public UF getUf() {
-		return uf;
-	}
+    public String getLogradouro() {
+        return logradouro;
+    }
 
-	public void setUf(UF uf) {
-		this.uf = uf;
-	}
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
+    }
 
-	public String getCep() {
-		return cep;
-	}
+    public String getBairro() {
+        return bairro;
+    }
 
-	public void setCep(String cep) {
-		this.cep = cep;
-	}
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
 
-	public Integer getNumero() {
-		return numero;
-	}
+    public String getCidade() {
+        return cidade;
+    }
 
-	public void setNumero(Integer numero) {
-		this.numero = numero;
-	}
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
 
-	public String getComplemento() {
-		return complemento;
-	}
+    public UF getUf() {
+        return uf;
+    }
 
-	public void setComplemento(String complemento) {
-		this.complemento = complemento;
-	}
+    public void setUf(UF uf) {
+        this.uf = uf;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public Integer getNumero() {
+        return numero;
+    }
+
+    public void setNumero(Integer numero) {
+        this.numero = numero;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
+    }
 }

@@ -1,13 +1,12 @@
 package com.raul.mvc.boot.web.error;
 
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorViewResolver;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.Map;
 
 @Component
 public class MyErrorView implements ErrorViewResolver {

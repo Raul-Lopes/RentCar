@@ -1,15 +1,14 @@
 package com.raul.mvc.boot.service;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.raul.mvc.boot.beans.Customer;
+import com.raul.mvc.boot.dao.CustomerDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.raul.mvc.boot.beans.Customer;
-import com.raul.mvc.boot.dao.CustomerDao;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 @Transactional(readOnly = true)

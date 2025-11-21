@@ -1,9 +1,9 @@
 package com.raul.mvc.boot.service;
 
+import com.raul.mvc.boot.beans.Customer;
+
 import java.time.LocalDate;
 import java.util.List;
-
-import com.raul.mvc.boot.beans.Customer;
 
 public interface CustomerService {
 
@@ -17,9 +17,9 @@ public interface CustomerService {
 
     List<Customer> buscarTodos();
 
-	List<Customer> buscarPorNome(String nome);
+    List<Customer> buscarPorNome(String nome);
 
-	List<Customer> buscarPorCar(Long id);
-	
-	List<Customer> buscarPorDatas(LocalDate entrada, LocalDate saida);
+    List<Customer> buscarPorCar(Long id);
+
+    List<Customer> buscarPorDatas(LocalDate entrada, LocalDate saida);
 }

@@ -2,6 +2,22 @@
 
 A Customer Relationship Management demonstration system for car rental management built with Spring Boot and modern web technologies.
 
+
+![System Overview](About.png)
+
+---
+
+- List Of Customers
+
+![System Overview](ListOfCustomers.png)
+
+---
+
+- List Of Brand
+
+![System Overview](ListOfBrand.png)
+
+
 ## Features
 
 - **Brand Management**: Add and manage car brands (Fiat, Ford, Renault, etc.)
@@ -68,19 +84,3 @@ This project demonstrates:
 - RESTful CRUD operations
 
 ---
-
-- About
-
-![System Overview](About.png)
-
----
-
-- List Of Customers
-
-![System Overview](ListOfCustomers.png)
-
----
-
-- List Of Brand
-
-![System Overview](ListOfBrand.png)

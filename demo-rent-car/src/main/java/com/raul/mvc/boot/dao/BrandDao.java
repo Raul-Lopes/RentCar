@@ -1,8 +1,8 @@
 package com.raul.mvc.boot.dao;
 
-import java.util.List;
-
 import com.raul.mvc.boot.beans.Brand;
+
+import java.util.List;
 
 public interface BrandDao {
 
