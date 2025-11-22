@@ -2,62 +2,76 @@
 <html layout:decorate="~{layout}">
 <head>
     <meta charset="UTF-8"/>
+    <title>Home - Renta Car</title>
 </head>
 <body>
 
 <section class="layout-content" layout:fragment="corpo">
     <nav class="navbar navbar-expand-md bg-warning">
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><i class="oi oi-caret-right"></i>
-                    <span>Home</span></li>
-            </ul>
+        <div class="container-fluid">
+            <span class="navbar-text">
+                <i class="oi oi-caret-right"></i> Home
+            </span>
         </div>
     </nav>
 
-    <div class="container">
-        <div id="list-home" class="row">
-            <div class="col-4">
-                <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active"
-                       id="list-spring-boot-list" data-toggle="list" href="#spring-boot"
-                       role="tab" aria-controls="spring-boot">About the System</a> <a
-                        class="list-group-item list-group-item-action" id="list-sts-list"
-                        data-toggle="list" href="#sts" role="tab" aria-controls="sts">About
-                    the Author </a>
+    <div class="container py-4">
+        <div class="row">
+            <!-- Sidebar Navigation -->
 
-                </div>
-            </div>
             <div class="col-8">
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="spring-boot"
                          role="tabpanel" aria-labelledby="list-spring-boot-list">
 
-                        Customer Relationship Management demonstration system for car
-                        rental management. <br> The technology used: <a
-                            href="https://projects.spring.io/spring-boot/">Spring Boot</a>,
-                        <a href="https://projects.spring.io/spring-boot/">Spring JPA</a>,
-                        <a href="http://www.thymeleaf.org/">Thymeleaf</a>, <a
-                            href="https://www.webjars.org/">WebJars</a>, <a
-                            href="http://hibernate.org/orm/">Hibernate ORM</a> and <a
-                            href="https://getbootstrap.com/">Bootstrap</a>. <br> Main
-                        tools used: <a href="https://www.eclipse.org">Eclipse</a>, <a
-                            href="https://www.mysql.com/products/workbench/">Mysql
-                        WorkBeach</a>.
+            <!-- Main Content -->
+            <div class="col-12 col-md-8">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <!-- About the System -->
+                        <h5 class="card-title mb-3">About the System</h5>
+                        <p class="card-text">
+                            Customer Relationship Management demonstration system for car rental management.
+                        </p>
+                        <p class="card-text">
+                            <strong>Technologies used:</strong><br>
+                            <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener">Spring Boot</a>,
+                            <a href="https://spring.io/projects/spring-data-jpa" target="_blank" rel="noopener">Spring Data JPA</a>,
+                            <a href="https://www.thymeleaf.org/" target="_blank" rel="noopener">Thymeleaf</a>,
+                            <a href="https://www.webjars.org/" target="_blank" rel="noopener">WebJars</a>,
+                            <a href="https://hibernate.org/orm/" target="_blank" rel="noopener">Hibernate ORM</a>, and
+                            <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a>.
+                        </p>
+                        <p class="card-text">
+                            <strong>Main tools used:</strong><br>
+                            <a href="https://www.eclipse.org/" target="_blank" rel="noopener">Eclipse</a>,
+                            <a href="https://www.mysql.com/products/workbench/" target="_blank" rel="noopener">MySQL Workbench</a>.
+                        </p>
 
-                    </div>
-                    <div class="tab-pane fade" id="sts" role="tabpanel"
-                         aria-labelledby="list-sts-list">
-                        Raul Lopes <br> <br> <a
-                            href="https://www.linkedin.com/in/raul-lopes/">Linkedin</a> <br>
-                        <a href="https://github.com/Raul-Lopes">GitHub</a>
-
+                        <!-- About the Author (inline alternative) -->
+                        <hr class="my-4">
+                        <h5 class="card-title mb-3">About the Author</h5>
+                        <p class="card-text">
+                            <strong>Raul Lopes</strong><br>
+                            Full-stack developer passionate about clean code and scalable solutions.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="https://www.linkedin.com/in/raul-lopes/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                                <i class="fab fa-linkedin me-1"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/Raul-Lopes" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm">
+                                <i class="fab fa-github me-1"></i> GitHub
+                            </a>
+                            <a href="https://raullopes.com/" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm">
+                                <i class="fas fa-globe me-1"></i> Webpage
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
+
 </body>
 </html>

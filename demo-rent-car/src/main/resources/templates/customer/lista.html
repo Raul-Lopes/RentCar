@@ -8,17 +8,19 @@
 <section class="layout-content" layout:fragment="corpo">
 
     <nav class="navbar navbar-expand-md bg-warning">
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <div class="container-fluid">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <i class="oi oi-caret-right"></i>
                     <span>List of Customers</span>
                 </li>
             </ul>
-            <a class="btn btn-primary btn-md" href="/customers/register" role="button">
-                <span class="oi oi-plus" title="Registres" aria-hidden="true"></span>
-                <span>New Customer</span>
-            </a>
+            <div class="ml-auto">
+                <a class="btn btn-primary btn-md" href="/customers/register" role="button">
+                    <span class="oi oi-plus" title="Registres" aria-hidden="true"></span>
+                    <span>New Customer</span>
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -159,4 +161,4 @@
 
 </section>
 </body>
-</html>		
+</html>
