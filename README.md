@@ -1,86 +1,84 @@
 # Rent-Car CRM System
 
-A Customer Relationship Management demonstration system for car rental management built with Spring Boot and modern web technologies.
-
+A Customer Relationship Management demonstration system for car rental management built with Spring Boot 3 and modern web technologies.
 
 ![System Overview](About.png)
 
 ---
 
-- List Of Customers
-
-![System Overview](ListOfCustomers.png)
-
----
-
-- List Of Brand
-
-![System Overview](ListOfBrand.png)
-
-
 ## Features
 
-- **Brand Management**: Add and manage car brands (Fiat, Ford, Renault, etc.)
-- **Car Inventory**: Register and list available vehicles
-- **Customer Management**: Comprehensive customer database with rental history
-- **Rental Tracking**: Monitor rental dates, values, and customer information
-- **Responsive UI**: Bootstrap-powered interface for all devices
+- **Modern UI/UX**: Premium Glassmorphism design with a responsive sidebar and smooth transitions.
+- **Brand Management**: Add, edit, and list car brands (Fiat, Ford, Renault, etc.).
+- **Car Inventory**: Register and manage available vehicles with brand associations.
+- **Customer Management**: Comprehensive customer database with rental history and address details.
+- **Rental Tracking**: Monitor rental dates, values, and customer-car associations.
+- **Responsive Design**: Fully responsive interface optimized for desktop and mobile devices.
 
 ## Technology Stack
 
-- **Backend**: Spring Boot, Spring JPA, Hibernate ORM
-- **Frontend**: Thymeleaf, Bootstrap, WebJars
+- **Java**: Version 25
+- **Framework**: Spring Boot 3.5.8 (MVC, Data JPA)
+- **Frontend**: Thymeleaf, Bootstrap 5, Custom CSS (Glassmorphism)
 - **Database**: MySQL
-- **Development Tools**: Eclipse, MySQL Workbench
+- **Build Tool**: Maven
 
-## System Modules
+## Prerequisites
 
-### Brand Management
-- Create new car brands
-- View complete list of brands
-- Edit and update brand information
+Before running the application, ensure you have the following installed:
 
-### Car Management
-- Register new vehicles
-- Associate cars with brands
-- Maintain car inventory
+- **Java Development Kit (JDK) 25**
+- **Maven**
+- **MySQL Server**
 
-### Customer Management
-- Customer registration with personal details
-- Rental history tracking
-- Address and contact management
+## How to Run
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Raul-Lopes/RentCar.git
+    cd RentCar
+    ```
+
+2.  **Configure the Database:**
+    - Create a MySQL database (e.g., `rentcar`).
+    - Update `src/main/resources/application.properties` with your database credentials:
+        ```properties
+        spring.datasource.url=jdbc:mysql://localhost:3306/rentcar?createDatabaseIfNotExist=true&serverTimezone=UTC
+        spring.datasource.username=your_username
+        spring.datasource.password=your_password
+        spring.jpa.hibernate.ddl-auto=update
+        ```
+
+3.  **Build the project:**
+    ```bash
+    mvn clean install
+    ```
+
+4.  **Run the application:**
+    ```bash
+    mvn spring-boot:run
+    ```
+
+5.  **Access the application:**
+    Open your browser and navigate to: `http://localhost:8080`
 
 ## Project Structure
+
+```
 rent-car-crm/
+├── src/main/java/       # Spring Boot application source code
+├── src/main/resources/  # Templates (Thymeleaf), static assets (CSS, JS), and config
+├── src/test/java/       # Unit and integration tests
+└── pom.xml              # Maven dependencies and build configuration
+```
 
-├── src/main/java/ # Spring Boot application
+## Screenshots
 
-├── src/main/resources/ # Templates and static files
+### List Of Customers
+![List Of Customers](ListOfCustomers.png)
 
-├── src/test/java/ # Test classes
-
-└── pom.xml # Maven configuration
-
-## Usage
-- **Setup Brands**: Start by adding car brands through the Brand Management section
-
-- **Add Cars**: Register vehicles and associate them with existing brands
-
-- **Manage Customers**: Create customer profiles for rental transactions
-
-- **Process Rentals**: Track rental dates, values, and customer-car associations
-
-## Development
-This project demonstrates:
-
-- Spring Boot MVC architecture
-
-- JPA/Hibernate ORM implementation
-
-- Thymeleaf template integration
-
-- Bootstrap UI components
-
-- RESTful CRUD operations
+### List Of Brands
+![List Of Brands](ListOfBrand.png)
 
 ---
+&copy; 2025 Raul Lopes. All rights reserved.
