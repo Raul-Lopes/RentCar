@@ -9,13 +9,13 @@ import com.raullopes.mvc.boot.service.BrandService;
 
 @Component
 public class StringToBrandConverter implements Converter<String, Brand> {
-	
+
 	@Autowired
 	private BrandService service;
 
 	@Override
 	public Brand convert(String text) {
-		if (text.isEmpty()) {
+		if (text != null && text.isEmpty()) {
 			return null;
 		}
 		Long id = Long.valueOf(text);

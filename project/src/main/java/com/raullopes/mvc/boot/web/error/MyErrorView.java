@@ -18,12 +18,12 @@ public class MyErrorView implements ErrorViewResolver {
         model.addObject("status", status.value());
         switch (status.value()) {
             case 404:
-                model.addObject("error", "Página não encontrada.");
-                model.addObject("message", "A url para a página '" + map.get("path") + "' não existe.");
+                model.addObject("error", "Page not found.");
+                model.addObject("message", "The URL for the page '" + map.get("path") + "' does not exist.");
                 break;
             case 500:
-                model.addObject("error", "Ocorreu um erro interno no servidor.");
-                model.addObject("message", "Ocorreu um erro inexperado, tente mais tarde.");
+                model.addObject("error", "An internal server error occurred.");
+                model.addObject("message", "An unexpected error occurred. Please try again later.");
                 break;
             default:
                 model.addObject("error", map.get("error"));
